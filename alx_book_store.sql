@@ -7,12 +7,12 @@ USE alx_book_store;
 CREATE TABLE Books (
     book_id INT PRIMARY KEY,
 	title VARCHAR(130),
-	FOREIGN KEY (author_id) REFERENCING Authors(auther_id),
+	FOREIGN KEY (author_id) REFERENCING Authors(author_id),
 	publication_date DATE
 )
 
 CREATE TABLE Authors (
-    auther_id INT PRIMARY KEY,
+    author_id INT PRIMARY KEY,
 	author_name VARCHAR(215)
 )
 
